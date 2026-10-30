@@ -366,7 +366,110 @@ END
     text-decoration:underline;
 }
 
-[type="text"],[type="email"],[type="number"]{
+
+/* Remove the browser's default spacing */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Style the whole page */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+} */
+
+/* The card */
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin:100px;
+}
+.card {
+    width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* The image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* The text area */
+.card-content {
+    padding: 20px;
+}
+
+/* The heading */
+.card-content h2 {
+    color: #0b3d5c;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* The description */
+.card-content p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* The list */
+.card-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* The button */
+.card-button {
+    display: block;
+    background-color: #0b3d5c;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.card-button:hover {
+    background-color: #176b91;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+
+/* [type="text"],[type="email"],[type="number"]{
     width: 100%;
     height:50px;
 }
@@ -400,7 +503,7 @@ form{
 
 .location{
     margin-top:20px;
-}
+} */
 /* to end */
 
 .all{
